@@ -49,7 +49,7 @@ let weather = {
       country.toLowerCase() +
       '.png';
     //sunrise:
-    let unix_timestamp = sunrise; //transformar em funcao para puxar ambos> sunrise e sunset
+    let unix_timestamp = sunrise; //transformar em funcao para puxar ambos>sunrise e sunset
     var date = new Date(unix_timestamp * 1000);
     var hours = date.getHours();
     var minutes = '0' + date.getMinutes();
