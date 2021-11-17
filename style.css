@@ -70,6 +70,14 @@ h1.temp {
   margin-left: 8px;
 }
 
+.container-info {
+  padding-top: 16px;
+}
+
+.container-info .humidity {
+  padding-bottom: 5px;
+}
+
 .weather .loading {
   visibility: hidden;
   max-width: 20px;
