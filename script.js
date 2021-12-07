@@ -83,6 +83,7 @@ document
     }
   });
 
-weather.fetchWeather('Florianopolis'); //default value
+//default value:
+weather.fetchWeather('Florianopolis');
 
 //sunset e sunrise: modificar para nao precisar repetir codigo
