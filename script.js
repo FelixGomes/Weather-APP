@@ -1,5 +1,5 @@
 let weather = {
-  apiKey: '5de8fbdada6924a8a41040eb087a39da',
+  apiKey: 'insira aqui sua API key',
   fetchWeather: function (city) {
     fetch(
       'http://api.openweathermap.org/data/2.5/weather?q=' +
@@ -43,20 +43,27 @@ let weather = {
     document.querySelector('.wind').innerText =
       'Wind Speed: ' + speed + ' m/s '; //value in km/h = speed * 3.6
     document.querySelector('.weather').classList.remove('loading');
-    //document.querySelector('.country').innerText = 'Country: ' + country;
+    //show the country flag of that city:
     document.querySelector('.country1').src =
       'https://openweathermap.org/images/flags/' +
       country.toLowerCase() +
       '.png';
     //sunrise:
-    let unix_timestamp = sunrise; //transformar em funcao para puxar ambos>sunrise e sunset
-    var date = new Date(unix_timestamp * 1000);
+    let timestamp_sunrise = sunrise;
+    var date = new Date(timestamp_sunrise * 1000);
     var hours = date.getHours();
     var minutes = '0' + date.getMinutes();
     var formattedTime = hours + ':' + minutes.substr(-2);
     document.querySelector('.sunrise').innerText = 'Sunrise: ' + formattedTime;
     //sunset:
+    let timestamp_sunset = sunset;
+    var date = new Date(timestamp_sunset * 1000);
+    var hours = date.getHours();
+    var minutes = '0' + date.getMinutes();
+    var formattedTime = hours + ':' + minutes.substr(-2);
     document.querySelector('.sunset').innerText = 'Sunset: ' + formattedTime;
+
+    //background image when user search the city he wants
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/1600x900/?" + name + "')";
   },
@@ -77,3 +84,6 @@ document
   });
 
 weather.fetchWeather('Florianopolis'); //default value
+
+//necessário arrumar sunset e sunrise:
+//transformar em funcao para puxar ambos sem precisar repetir codigo
