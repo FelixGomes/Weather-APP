@@ -1,5 +1,5 @@
 let weather = {
-  apiKey: '5de8fbdada6924a8a41040eb087a39da',
+  apiKey: 'INSIRA SUA API KEY AQUI',
   fetchWeather: function (city) {
     fetch(
       'http://api.openweathermap.org/data/2.5/weather?q=' +
@@ -85,4 +85,4 @@ document
 
 weather.fetchWeather('Florianopolis'); //default value
 
-//sunset e sunrise transformar em funcao para puxar ambos sem precisar repetir codigo
+//sunset e sunrise: modificar para nao precisar repetir codigo
