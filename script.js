@@ -84,4 +84,5 @@ document
   });
 
 weather.fetchWeather('Florianopolis'); //default value
-//transformar em funcao para puxar ambos sem precisar repetir codigo
+
+//sunset e sunrise transformar em funcao para puxar ambos sem precisar repetir codigo
