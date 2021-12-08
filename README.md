@@ -7,3 +7,5 @@ Esse projeto me ajudou a melhorar algumas skills em JavaScript e também me ajud
 puxar e mostrar as informações contidas em uma API.
 
 Usei a API de openweathermap (https://openweathermap.org)
+
+![appweather](appweather.PNG)
